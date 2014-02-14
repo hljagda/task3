@@ -1,0 +1,693 @@
+
+
+body
+{
+	color: #222;
+	background: #fff;
+	font-size: small;
+	font-family: arial,sans-serif;
+	margin: 0;	
+	padding: 0;	
+	overflow-y: scroll; 	
+	display: block; 
+}
+
+/*Media Queries to adjust search-bar width*/
+
+@media (min-width: 768px) {
+  #txtSearch {
+    width: auto;
+  }
+}
+@media (min-width: 992px) {
+  #txtSearch {
+    width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  #txtSearch {
+    width: 450px;
+  }
+}
+
+/*Media Queries for other elements*/
+
+@media (max-width: 320px) {
+  #txtSearch 
+  {
+    width: auto;    
+  }
+  #google-brand-search
+  {
+  	text-align: center;
+  }  
+
+  .related-searches
+  {
+  	padding-left: 0 !important;
+  }
+}
+
+
+strong, em, b
+{
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+.tNav
+{
+	background-color: #f1f1f1;
+}
+
+#google-brand-search
+{	
+	padding-left: 5px;
+}
+
+#google-brand-search > a > img
+{
+	padding: 10px;
+}
+
+#google-brand-search > a:hover
+{
+	text-decoration: none !important;
+}
+
+
+#txtSearch
+{
+	border-radius: 0;	
+	padding: 0 25px 3px 10px;		
+	font-size: 120%;
+}
+
+#btnSearch
+{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	margin-left: -5px;
+	background-color: #4285f4;	
+	height: auto;	
+	padding-right: 20px;
+	padding-left: 20px;	
+}
+
+.glyphicon-search
+{
+	color: white;
+}
+
+#frmSearch
+{
+	display: inline-block;
+}
+
+
+.tooltip-inner
+{
+	padding: 10px;
+	min-width: 150px;
+	border-radius: 0;
+	border: 2px solid #fff;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    /*padding right 25px*/
+}
+
+#voiceRec 
+{
+    position: absolute;
+    background: url('../images/mic.gif') no-repeat;
+    background-size: 14px 19px;	
+    right: 5px;
+    top: 7px;
+	height: 23px;
+	width: 17px;    
+    cursor: pointer;    
+    opacity: .55;
+}
+
+#voiceRec:hover
+{
+	opacity: 1;
+}
+
+.topNavLinks
+{
+	color: #404040 !important;
+	background-color: transparent !important;
+}
+
+.topNavLinks:hover, .topNavLinks:focus
+{
+	color: #000 !important;	
+	background-color: transparent !important;
+}
+
+.topNavLinksUnderline
+{
+	text-decoration: none;
+}
+
+.topNavLinksUnderline:hover
+{
+	text-decoration: underline !important;
+}
+
+.googleSwitch
+{
+	background-image: url('../images/sprite.png');
+	background-size: 536px 341px;
+	background-position: -431px -242px;	
+	opacity: .55;
+	margin-top: 10px;
+}
+
+.googleSwitch:hover
+{
+	opacity: 1;
+}
+
+.googleNotifications
+{
+	background-image: url('../images/sprite.png');
+	background-size: 536px 341px;
+	background-position: -497px -277px;
+	margin-top: 10px;
+	opacity: .55;
+}
+
+.googleNotifications:hover
+{
+	opacity: 1;
+}
+
+.btnShare
+{
+	background-color: #e7e7e7;
+	padding: 7px;
+	color: #404040;
+}
+
+.btnShare:hover
+{
+	background-color: #DDDDDD;
+	color: #404040;
+}
+
+#userImage-a
+{
+	padding-top:10px; 
+	padding-bottom:0;
+}
+
+.userImage
+{
+	background-image: url('../images/photo.jpg');
+	background-size: 30px 30px;
+	border-radius: 50%;
+	display: block;	
+	height: 30px;
+	width: 30px;
+}
+
+.add-padding-lr-8px
+{
+	padding-left:8px; 
+	padding-right:8px;
+}
+
+
+#type-switcher-row
+{
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.type-switcher-links
+{
+	/*padding-left: 120px;*/ /*To align with search bar-- not reqd!*/
+}
+
+
+.nav-pills-type-switcher > li > a
+{
+	background-color: white;
+	color: #777;
+	border: none;
+	padding-top: 15px;
+	padding-bottom: 15px;	
+}
+
+.nav-pills-type-switcher > li > a:hover
+{
+	color: black;
+	background-color: transparent;
+	border: none;
+}
+
+.nav-pills-type-switcher > li.active > a
+{
+	color: #dd4b39;
+	background-color: white;
+	border-radius: 0;
+	border-bottom: 3px solid #dd4b39;
+}
+
+.nav-pills-type-switcher > li.active > a:hover
+{
+	text-decoration: none;
+	background-color: transparent;
+	color: #dd4b39;
+}
+
+.dropdown > a
+{
+	background-color: transparent;
+}
+
+.open .dropdown-toggle.btn-default 
+{
+	background-color: transparent;	
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus 
+{
+	background-color: transparent;
+}
+
+.dropdown-menu
+{
+	border-radius: 0;
+	border: 1px solid #d6d6d6;
+}
+
+.btnSettings
+{
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 2px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #f5f5f5;
+	border: 1px solid #d6d6d6;		
+	font-size: 150%;
+	color: black;
+	opacity: 0.667;
+}
+
+.btnSettings:hover
+{
+	opacity: 1;
+}
+
+#resultStats
+{
+	color: #999;
+	padding: 20px 20px 20px 0;
+}
+
+
+.googleResults-Panel-default
+{
+	padding: 1px;
+	line-height: 1.2;
+	color: #666;
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+}
+
+.googleResults-Panel-default .panel-body
+{
+	padding: 1px;
+}
+
+.adPanel
+{
+	background-color:#fef7ed;
+	border-color: #ddd;
+	border: 1px solid transparent;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+	box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.gr-title
+{
+	display: block;
+	overflow: hidden;
+	-webkit-text-overflow: ellipsis;
+	text-overflow: ellipsis;	
+	white-space: nowrap;
+	font-size: medium;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.gr-title > a
+{
+	color: #1e0fbe;
+	text-decoration: underline;	
+}
+
+.gr-content
+{
+	white-space: nowrap;		
+}
+
+.gr-urls
+{
+	color: #006621;
+	font-size: 1.1em;
+	overflow: hidden;
+	-webkit-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	display: block;
+}
+
+.gr-ct
+{
+	color: #444;
+	font-size: small;
+	overflow: hidden;
+	-webkit-text-overflow: ellipsis;
+	text-overflow: ellipsis;		
+	line-height: 1.24;
+	display: block;	
+}
+
+.marginbottom1px
+{
+	display: block;
+	margin-bottom: 1px;
+}
+
+
+.text-muted
+{
+	padding-top: 3px;
+}
+
+.media
+{
+	margin-top: 1px;
+}
+
+.gr-title > #report
+{
+	font-size: 80%;
+	text-decoration: none !important;
+}
+
+.gr-images
+{
+	
+}
+
+.gr-images > a > img
+{	
+	max-width: 22%; /*Check*/
+	display: inline-block;
+}
+
+.rhs-panel-shop
+{
+	padding: 1px;
+	line-height: 1.2;
+	color: #666;	
+	border-radius: 0;	
+}
+
+.rhs-panel-shop .panel-heading
+{
+	padding: 1px 0 5px 10px;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;	
+}
+
+.rhs-panel-shop .panel-heading h3
+{
+	font-size: medium; 	
+	margin-top: 10px !important;
+	display: inline-block;
+}
+
+.rhs-panel-shop .panel-heading span
+{
+	font-size: small; 		
+	display: inline-block;
+	padding: 5px 5px 5px 0;
+	
+}
+
+.rhs-panel-shop .panel-body
+{
+	padding: 1px 15px 5px 15px;
+}
+
+.add-border-lr
+{
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+}
+
+.img-container
+{
+	text-align: center;
+}
+
+.img-container > img
+{
+	height: 100px;
+	margin: auto;
+}
+
+.rhs-title
+{
+	color: #1e0fbe;
+	text-decoration: underline;	
+	font-size: small;
+}
+
+.product-details
+{
+	margin-top: 10px;
+	margin-bottom: 20px;	
+}
+
+.product-title
+{
+	height: 2.4em;
+	line-height: 1.2em;
+	overflow: hidden;
+}
+
+.product-price
+{
+	margin-top: 2px;
+	display: block;
+}
+
+.rhs-price
+{
+	color: #222;
+	font-weight: bold;
+}
+
+.product-source
+{
+	margin-bottom: -1px;
+	margin-top: 2px;
+	overflow: hidden;
+	padding-bottom: 1px;
+	white-space: nowrap;
+}
+
+.rhs-source
+{
+	color: #006621;
+}
+
+#seeYourAdHere
+{
+	padding-top: 30px;	
+}
+
+#seeYourAdHere > a
+{
+	color: #1e0fbe;	
+}
+
+
+
+#gooogle
+{
+	border-collapse: collapse;
+	text-align: left;
+	margin: 30px auto 30px;
+	border-spacing: 2px;
+	border-color: gray;	
+}
+
+#gooogle > tbody
+{
+	display: table-row-group;	
+}
+
+#gooogle > tbody > tr 
+{
+	vertical-align: top;
+	display: table-row;
+	border-color: inherit;
+}
+
+#gooogle >tbody > tr > td
+{
+	text-align: center;
+}
+
+td, th
+{
+	display: table-cell;	
+	vertical-align: top;
+}
+
+.gooogle-g
+{
+	background:url('../images/nav_logo170_hr.png') no-repeat;
+	background-position:-24px 0;
+	background-size:167px;
+	width:28px;		
+}
+
+.h40-block
+{
+	height: 40px;
+	display: block;
+	overflow: hidden;	
+}
+
+.gooogle-o-red
+{
+	background:url('../images/nav_logo170_hr.png') no-repeat;
+	background-position:-53px 0;
+	background-size:167px;
+	width:20px
+}
+
+.bold
+{
+	font-weight: bold;
+	vertical-align: bottom !important;
+	text-align: center;
+}
+
+.gooogle-o
+{
+	background: url('../images/nav_logo170_hr.png') no-repeat;
+	background-position: -74px 0;
+	background-size: 167px;
+	width: 20px;
+}
+
+.gooogle-links
+{
+	color: #1e0fbe;
+}
+
+.gooogle-links:hover
+{
+	color: #1e0fbe;	
+}
+
+.gooogle-gle-next
+{
+	background: url('../images/nav_logo170_hr.png') no-repeat;
+	background-position: -96px 0;
+	background-size: 167px;
+	width: 71px;
+}
+
+.gooogle-next
+{
+	display:block;
+	margin-left:53px;
+	text-decoration:underline;	
+}
+
+.google-footer
+{
+	background: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+	font-size: small;
+}
+
+.google-footer a
+{
+	color: #333;	
+}
+
+.google-footer a:hover
+{
+	color: black;
+}
+
+.google-footer-ul
+{
+	list-style: none;
+	padding: 5px 0;	
+}
+
+.google-footer-ul > li
+{
+	display: inline;
+	padding-right: 25px;
+	
+}
+
+.black
+{
+	color: black;
+}
+
+.relsearch
+{
+	display: block;
+}
+
+.related-searches
+{
+	width: auto;
+	float: left;
+	list-style: none;
+	padding: 0;
+}
+
+.add-padding-left-20px
+{
+	padding-left: 20px;
+}
+
+.related-searches > li
+{
+	padding: 5px 0;
+}
+
+.related-searches a
+{
+	color: black;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.related-searches a:hover
+{
+	color: black;	
+}
